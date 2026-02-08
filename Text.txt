@@ -1,0 +1,2 @@
+This is a test file for hashing program 
+3200 Lab 02
