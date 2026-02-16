@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <iomanip>
 #include "json.hpp"
 
 
@@ -50,7 +51,7 @@ std::vector<std::string> traverse_directory() {
         if (file.is_open()) {
             std::cout << "traversing file: " << std::endl;
             info.push_back(path);
-            std:size_t hash = hash_file(path);
+            std::size_t hash = hash_file(path);
             done = true;
             info.push_back(std::to_string(hash));
             file.close();
